@@ -115,7 +115,6 @@ python-gitlab==2.8.0
 python-vlc==3.0.12118
 pytz==2019.3
 pyWinhook==1.6.2
-pywinpty==1.1.2
 PyYAML==5.4.1
 pyzmq==22.1.0
 qtconsole==5.1.0
