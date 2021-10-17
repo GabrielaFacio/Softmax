@@ -108,5 +108,5 @@ beta_slider.js_on_change('value',callback)
    
 show(tabs)
 
-curdoc().add_root(tabs)
+#curdoc().add_root(tabs)
 
