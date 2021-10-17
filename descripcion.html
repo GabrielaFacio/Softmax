@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+</head>
+<style>
+    a {
+    font-size: 1em;
+    text-decoration: none;
+    color: rgb(2, 46, 85);
+    }
+   
+    h1 {      
+        color: #08145c;
+        font-family: 'Julius Sans One', sans-serif;
+        text-transform: uppercase;
+    }
+    h2{
+        margin: 1em 0 0 2em;
+        color: #08145c;        
+        font-size: .9em;
+        text-transform: uppercase;
+    }
+    hr{
+        width: 800px;
+        border-width: 1px;
+        border-color: #08145c;
+    }
+    .contenedor {
+    background: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 10px;
+    text-align: justify;
+    }
+
+    
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: justify;
+        text-justify:inter-word;
+        margin-left: 20px;
+        width: 100%;
+        overflow-wrap: break-word;
+        font-size: 1.2em;
+        
+    }
+    li{
+        margin-left: 150px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+     
+    .footer{
+    background: #fcebd4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align:center; 
+    }
+    nav ul, footer ul {
+    font-family:'Couries New', 'Courier', 'monospace';
+    padding: 20px;
+    font-size:1em;
+    list-style: none;
+    text-align:center; 
+}
+
+    nav ul li, footer ul li {
+    display: inline;
+    margin-right: 30px;
+    margin-left: 30px;
+       
+}
+
+
+    
+    </style>
+   <body>
+    
+    <h1>Funci&oacute;n Softmax</h1>
+    <h2>L A B 2 5</h2>
+    <h2>Por: Gabriela Garc&iacute;a Facio</h2><hr>
+ <br>
+
+            <div class="contenedor">   
+            
+            <p>
+                Cuando vamos a tomar una decisi&oacute;n, necesitamos hacerlo entre al menos 2 opciones, lo cual hace que surjan dos posibles caminos:
+                <ul>
+                    <li>Siempre elegir el est&iacute;mulo / opci&oacute;n con el m&aacute;ximo valor.</li>
+                    <li>En ocasiones explorar si la otra opci&oacute;n ofrece mayor recompensa.</li>
+
+                </ul></p>
+            <p>
+                Resulta que aunque la primera opci&oacute;n (por ejemplo), tuviera la recompensa m&aacute;s grande, los animales no humanos y humanos,
+                no suelen usar esta estrategia, es decir, <i>la de maximizar probabilidades.</i> M&aacute;s bien eligen el est&iacute;mulo con
+                la probabilidad m&aacute;s alta,cometiendo de forma <b> ocasional algunos "errores".</b> (O'Reilly & den Ouden, 2015; Wilson & Collins, 2019).<br>
+                Para modelar esta estrategia de decisi&oacute;n, usaremos la regla selecci&oacute;n de acciones <b>Softmax</b>.
+                            
+                
+            </p>
+   
+            
+            <footer>
+                <div class="footer">
+                    <ul>
+                    <li><a href="https://github.com/GabrielaFacio"><i class="fa fa-github"></i> github.com/GabrielaFacio</a></li><br>
+                    <li><a href="mailto:jackfacio70@gmail.com"><i class='fa fa-envelope-o'></i> jackfacio70@gmail.com</a></li><br>
+                    <li><a href="http://www.bouzaslab25.com/"><i class="fa fa-globe"></i> Lab25 WebSite</a></li>
+                    </ul>
+                </div>
+            <footer>
+           
+            </div>
+ 
+    
+</body>
+</html>

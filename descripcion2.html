@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,
+    initial-scale=1.0">
+    
+    
+    
+</head>
+
+<style>
+        
+    h1 {      
+        color: #08145c;
+        font-family: 'Julius Sans One', sans-serif;
+        text-transform: uppercase;
+    }
+    h2{
+        margin: 1em 0 0 2em;
+        color: #08145c;        
+        font-size: .9em;
+        text-transform: uppercase;
+    }
+    hr{
+        width: 800px;
+        border-width: 1px;
+        border-color: #08145c;
+    }
+    
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-left: 0px;
+        width: 100%;
+        font-size: 1.2em;
+        margin-top: 25px;
+        
+    }
+    li{
+        margin-left: 150px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+</style>
+<body>
+
+
+
+<p>
+    La <b>Funci&oacute;n Softmax</b> es una de las funciones mejor conocidas en ciencia e ingenieria, por lo que ha sido ampliamente 
+    utilizada en campos como <i>teor&iacute;a de juegos, aprendizaje por refuerzo y aprendizaje de m&aacute;quinas</i>(Gao & Pavel, 2018).
+</p>
+<p>
+   En el caso espec&iacute;fico de <i>aprendizaje por refuerzo</i>, la <b>funci&oacute;n softmax</b> nos permite estimar 
+   la probabilidad de elegir una opci&oacute;n sobre otra, dej&aacute;ndonos entreveer los comportamientos de <b>exploraci&oacute;n y explotaci&oacute;n</b> 
+   especialmente por el valor que el <b>par&aacute;metro de temperatura inversa &beta;</b> adquiere. <br>
+   El par&aacute;metro &beta; controla el n&iacute;vel de estocasidad en la elecci&oacute;n, por lo tanto, este par&aacute;metro
+   puede adquirir valores desde 0 hasta &infin; donde valores cercanos a 0 = elecciones al azar o <b>explorar</b> y valores cercanos a 
+   &infin; =elegir el la opci&oacute;n con el valor m&aacute;s alto o <b>explotar</b> (O'Reilly & den Ouden, 2015).
+</p>
+
+<p>
+    Como un ejemplo motivante, considera el caso de decidir entre dos opciones <b>A y B</b>,donde la probabilidad de elegir la opci&oacute;n A est&aacute; dada por:
+
+</p><br>
+<p>
+    <img src="ecuacion.png" class="center">
+</p>
+
+<p>
+    Donde
+    <ul>
+        <li><b>V<sub>s</sub>=</b> El valor asociado con la opci&oacute;n/ Utilidad de la opci&oacute;n (en este caso A)</li>
+        <li><b>&beta;=</b> Par&aacute;metro que controla nivel de estocacidad.</li>
+        <ul>
+            <li><b>&beta;=&infin;:</b> Tendencia a seleccionar la opci&oacute;n con la opci&oacute;n con mayor valor de <b>V<sub>i</sub></b></li>
+            <li><b>&beta;=0 :</b> Todas las opciones se vuelven igualmente probables y el modelo elige una opci&oacute;n de acuerdo a una <b>~Unif</b></li>  
+
+    </ul>
+        <li><b>V<sub>i</sub>=</b> El valor asociado a ambas opciones (A y B)</li>
+    </ul>
+</p>
+<p>
+    Como podr&aacute;s ver en la gr&aacute;fica, la probabilidad de elegir el est&iacute;mulo <b>A incrementa con la diferencia de V<sub>i</sub></b>(utilidad B-A).
+    Por lo anterior, es correcto decir que el sujeto elige A la mayor&iacute;a del tiempo cuando <b>V<sub>A</sub>> V<sub>B</sub></b> (pero no siempre).<br>
+    De aqu&iacute; el t&eacute;rmino <i>Softmax</i>, ya que el sujeto elige el est&iacute;mulo con el m&aacute;ximo valor la mayor&iacute;a del tiempo, 
+    por lo que es una funci&oacute;n de maximizaci&oacute;n <b>'suave' (soft).</b>
+</p>
+
+<p>
+    Aunque existen otros algoritmos que pueden dar cuenta de los mecanismos de elecci&oacute;n, el uso de la <b>regla de desici&oacute;n softmax</b>
+    est&aacute; favorablemente sustentada por la literatura experimental, concluyedo que es un modelo plausible para modelar la toma de decisiones<br>
+    de la vida real.
+</p>
+
+
+
+</body>
+</html>
