@@ -1,1 +1,1 @@
-worker: python softmax.py
+web: python softmax.py
